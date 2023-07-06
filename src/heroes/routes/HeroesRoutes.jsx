@@ -14,7 +14,7 @@ export const HeroesRoutes = () => {
                 <Route path='dc' element={ <DcPage /> }/>
                 <Route path='search' element={<SearchPage />} />
                 <Route path='hero/:heroId' element={<HeroPage />}/>
-                <Route path='/' element={<Navigate to='/marvel' replace/>} />
+                <Route path='/*' element={<Navigate to='/marvel' replace/>} />
             </Routes>
         </div>
     </>
